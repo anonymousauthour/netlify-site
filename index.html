@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evilweb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div id="initial-screen">
+        <div class="click-text">CLICK ANYWHERE</div>
+    </div>
+
+    <div id="main-content" class="hidden">>
+        <video autoplay loop playsinline id="bg-video">
+            <source src="media/background.mp4" type="video/mp4">
+            Ваш браузер не поддерживает тег video.
+        </video>
+
+        <div class="profile-card">
+            <div class="profile-header">
+                <div class="pfp-container">
+                    <img src="images/pfp_evilweb.jpg" alt="Avatar" class="pfp">
+                    <span class="status-indicator" id="discord-status-indicator"></span>
+                </div>
+                <div class="user-info">
+                    <div class="username-badges">
+                        <span class="username">evilweb</span>
+                        <div class="badges-container">
+                            <img src="images/crown.png" alt="Crown" class="badge">
+                            <img src="images/star.png" alt="Star" class="badge">
+                        </div>
+
+                    </div>
+                    <p class="status" id="discord-status-text">Loading status...</p>
+                    <p class="activity" id="discord-activity-text"></p>
+                    <div class="social-icons">
+                        <a href="https://discord.com/users/1149766592528396378" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <img src="images/discord.png" alt="Discord" class="social-icon">
+                        </a>
+                        <a href="https://www.roblox.com/users/6169039582/profile" target="_blank" rel="noopener noreferrer" class="social-link">
+                             <img src="images/roblox.png" alt="Roblox" class="social-icon">
+                        </a>
+                        <a href="https://t.me/encodeweb" target="_blank" rel="noopener noreferrer" class="social-link">
+                             <img src="images/telegram.png" alt="Telegram" class="social-icon">
+                        </a>
+                     </div>
+                </div>
+
+                 <div class="views">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill eye-icon" viewBox="0 0 16 16">
+                     <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                     <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                   </svg>
+                   <span id="view-count">0</span>
+                </div>
+            </div>
+
+            <div class="group-info">
+                <img src="images/narukami_icon.jpg" alt="Group Icon" class="group-icon">
+                <div class="group-details">
+                    <div class="group-name-wrapper">
+                         <span class="group-name">Narukami</span>
+                         <img src="images/verified-glow.png" alt="Verified" class="verified-icon-img">
+                    </div>
+                    <div class="group-members">
+                        <span class="online"><span class="dot online-dot"></span> <span id="discord-online-count">? </span>  online</span>
+                        <span class="total"><span class="dot total-dot"></span> <span id="discord-total-count">? </span>  members</span>
+                    </div>
+                </div>
+                <a href="https://discord.gg/M2j7demwpV" target="_blank" rel="noopener noreferrer" class="join-link">
+                    <button class="join-button">join</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
